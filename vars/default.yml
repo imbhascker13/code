@@ -1,7 +1,7 @@
 ---
 app_user: "ubuntu"
 http_host: "nodejs-hello-world"
-http_conf: "apache.conf.j2"
+http_conf: "files/apache.conf.j2"
 http_port: "90"
 http_port1: "91"
 http_port2: "92"
