@@ -48,7 +48,13 @@
     - name: Copy index test page
       template:
         src: "files/index.js"
-        dest: "/var/www/{{ http_host }}/index.js"    
+        dest: "/var/www/{{ http_host }}/index.js"
+    
+    - name: Copy index test page
+      template:
+        src: "files/ports.conf.j2"
+        dest: "/etc/apache2/ports.conf"    
+        
 
     - name: Set up Apache virtualhost
       template:
