@@ -34,6 +34,9 @@
    
     - name: Install Passenger
       shell: apt-get install -y libapache2-mod-passenger
+      
+    - name: Install npm
+      shell: apt-get install npm
     
     - name: Update VM
       apt: update_cache=yes force_apt_get=yes 
